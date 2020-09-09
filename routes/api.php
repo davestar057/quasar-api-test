@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 Route::middleware('auth:sanctum')->get('bankholidays/list', 'BankHolidaysController@index');
+Route::middleware('auth:sanctum')->get('users/logs', 'UserLogs@index');
